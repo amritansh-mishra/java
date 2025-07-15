@@ -1,20 +1,20 @@
 import java.util.Scanner;
 public class pattern3 {
     public static void main(String[] args) {
-        Scanner sc = new scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int space = n - 1;
         int star = 1;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= space; j++) {
-                System.out.print(" ");
+                System.out.print("\t"); // Print spaces
             }
             for (int j = 1; j <= star; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+                System.out.print("*\t");
+            } 
             space--;
-            star += 2;
+            star++;
+            System.out.println();
         }
     }
     
