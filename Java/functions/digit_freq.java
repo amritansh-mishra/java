@@ -1,3 +1,4 @@
+package functions;
 import java.util.Scanner;
  public class digit_freq {
      public static void main(String[] args) {
