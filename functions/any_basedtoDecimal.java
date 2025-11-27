@@ -1,8 +1,8 @@
+package functions;
 
-import java.util.Scanner;
-public class decimal_base{
-     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+public class any_basedtoDecimal {
+    public static void main(String[] args) {
+        java.util.Scanner sc = new java.util.Scanner(System.in);
         int n = sc.nextInt();
         int b = sc.nextInt();
         int dn = getValueInBase(n, b);
@@ -14,12 +14,12 @@ public class decimal_base{
 
         int pow = 1;
         while (n > 0) {
-           int dig = n % b;
-           n = n / b;
+           int dig = n % 10;
+           n = n / 10;
            rv += dig * pow;
-           pow = pow * 10;
+           pow = pow * b;
         }
         return rv;
 
-    }
+    } 
 }
