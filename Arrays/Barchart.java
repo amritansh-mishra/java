@@ -27,7 +27,7 @@ public class Barchart {
                     System.out.print("\t");
                 }
             } 
-            System.out.println();
+            System.out.println(); 
         }
 
     }
